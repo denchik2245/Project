@@ -1,0 +1,22 @@
+telegram:
+  token: "7513496247:AAEduywbyFzEd644oYxoj7kul58ZQJ8NWcI"
+
+parsing:
+  flights:
+    urls:
+      - "https://www.aviasales.ru/"
+      - "https://www.tutu.ru/"
+  accommodations:
+    urls:
+      - "https://www.booking.com/"
+      - "https://www.avito.ru/"
+  local_services:
+    urls:
+      - "https://2gis.ru/"
+      - "https://yandex.ru/maps/"
+  attractions:
+    urls:
+      - "https://www.tripadvisor.ru/"
+
+neural:
+  ollama_url: "http://localhost:11434"  # Пример URL для локальной нейросети
