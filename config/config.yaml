@@ -2,21 +2,18 @@ telegram:
   token: "7513496247:AAEduywbyFzEd644oYxoj7kul58ZQJ8NWcI"
 
 parsing:
-  flights:
-    urls:
-      - "https://www.aviasales.ru/"
-      - "https://www.tutu.ru/"
-  accommodations:
-    urls:
-      - "https://www.booking.com/"
-      - "https://www.avito.ru/"
-  local_services:
-    urls:
-      - "https://2gis.ru/"
-      - "https://yandex.ru/maps/"
-  attractions:
-    urls:
-      - "https://www.tripadvisor.ru/"
+  YandexRasp: "c192a732-ccd3-4f26-860b-fcbd0ea3d15e"
+  AviaSales: "828624bc78939ac6eb0d6bdbcb3b66a8"
+
+  Booking: ""
+  Sutochno: ""
+  YandexTravel: "y0__xCgzeOKAxiL0iEgmfHWwxLewqDmGg8LF3Xco681MHIJ14DHLw"
+
+  YandexMap: "93421a0f-00c9-43a5-886e-57ac202f81f1"
+  2GIS: "b87c96fd-497b-4b6a-87de-70ad6b1e2c5a"
+
+  YandexPogoda: "272d98d2-6338-49be-a2dd-e0656890983e"
+
 
 neural:
   ollama_url: "http://localhost:11434"  # Пример URL для локальной нейросети
