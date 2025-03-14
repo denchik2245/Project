@@ -1,10 +1,8 @@
-#!/usr/bin/env python3
 import os
 import sys
 import yaml
 import requests
 import json
-
 
 def load_config(config_file):
     """
@@ -21,7 +19,6 @@ def load_config(config_file):
         print("Ошибка при разборе YAML файла:", exc)
         sys.exit(1)
 
-
 def fetch_prices(api_key, params):
     """
     Выполняет запрос к API Aviasales для получения самых дешёвых билетов за указанные даты.
@@ -35,7 +32,6 @@ def fetch_prices(api_key, params):
     except requests.RequestException as e:
         print("Ошибка при выполнении запроса к API:", e)
         return None
-
 
 def print_detailed_flights(result, base_url="https://www.aviasales.ru"):
     """
@@ -69,7 +65,6 @@ def print_detailed_flights(result, base_url="https://www.aviasales.ru"):
             print()  # пустая строка для разделения
     else:
         print("По заданным параметрам билеты не найдены.")
-
 
 def main():
     # Определяем путь к файлу config.yaml, если он находится в папке config относительно текущего файла
@@ -109,7 +104,6 @@ def main():
         print_detailed_flights(result)
     else:
         print("Не удалось получить данные от API.")
-
 
 if __name__ == "__main__":
     main()
